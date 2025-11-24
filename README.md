@@ -1,4 +1,4 @@
-# cyberpunkstreetbrawl
+# Cyberpunk Street Brawl
 A practice project for Python coding and Git management.
 
 ---
