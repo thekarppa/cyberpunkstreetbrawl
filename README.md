@@ -1,11 +1,11 @@
 # Cyberpunk Street Brawl
-A practice project for Python coding and Git management.
+A practice project for Python coding and Git management
 
 ---
 
 ## Overview
 
-A simple coding project to make a combat/brawling game.
+A simple coding project to make a combat/brawling game
 
 ---
 
