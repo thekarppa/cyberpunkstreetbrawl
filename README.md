@@ -13,6 +13,7 @@ A simple coding project to make a combat/brawling game
 
 - **Combat system** – First draft of combat system, including just 1-on-1 fights
 - **Enemy files** - Read enemy stats from an external file
+- **External combat text** - Read combat flavour text from an external file
 - **Intro** - A splash screen showing some instructions
 
 ---
