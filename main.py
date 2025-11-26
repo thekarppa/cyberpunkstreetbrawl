@@ -42,7 +42,7 @@ class Game:
     '''Asking for player actions'''
     @staticmethod
     def which_attack():
-        _choice = input("What do you want to do?")
+        _choice = input("What do you want to do? ")
         if _choice == "1":
             pass
         elif _choice == "2":
@@ -57,6 +57,20 @@ class Game:
             exit(0)
         else:
             Game.short_instructions()
+
+    '''Function for each choice'''
+    @staticmethod
+    def chose_attack():
+        pass
+    @staticmethod
+    def chose_dodge():
+        pass
+    @staticmethod
+    def chose_cover():
+        pass
+    @staticmethod
+    def chose_reload():
+        pass
 
     '''Making an attack roll: the simple idea is
     "accuracy + accuracy bonuses vs dodge + dodge bonuses" against a random 100 roll'''
