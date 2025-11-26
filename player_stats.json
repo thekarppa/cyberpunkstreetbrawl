@@ -1,0 +1,17 @@
+{ 
+    "player": {
+        "p_hp": 100,
+        "p_armor": 10,
+        "p_accuracy": 50,
+        "p_dodge": 25,
+        "p_melee_damage": 25,
+        "p_melee_accuracy_bonus": 35,
+        "p_melee_dodge_penalty": 15,
+        "p_pistol_damage": 13,
+        "p_pistol_accuracy_bonus": 15,
+        "p_pistol_ammo": 3,
+        "p_rifle_damage": 20,
+        "p_rifle_accuracy_bonus": 5,
+        "p_rifle_ammo": 6
+    }
+}
