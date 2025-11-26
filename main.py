@@ -6,12 +6,17 @@ with open("player_stats.json", "r", encoding="utf-8") as p_source:
     p_stats = json.load(p_source)
 with open("enemy_stats.json", "r", encoding="utf-8") as e_source:
     e_stats = json.load(e_source)
+with open("pistol_miss.txt", "r", encoding="utf-8") as pistol_misses:
+    pistol_miss_flavor = pistol_misses.readlines()
+    pistol_miss_amount = len(pistol_miss_flavor)
+    print('Total Number of lines:', pistol_miss_amount)
 
 '''Used for various easily accessible functions'''
 class Game:
     def __init__(self):
         self.p_name = ""
         self.player_name = None
+        self.select_weapon= 0
 
     def intro(self):
         print("You are an Edgerunner and you came across a street punk…")
@@ -44,13 +49,28 @@ class Game:
     def which_attack():
         _choice = input("What do you want to do? ")
         if _choice == "1":
-            pass
+            print("Do you want to use your")
+            print("1. Knife for deadly close-quarters combat")
+            print("2. Pistol for a weaker aimed shot")
+            print("3. Rifle for deadly burst fire")
+            print("4. Back out and choose something else")
+            _select_weapon = int(input("What do you want to do? "))
+            if _select_weapon == 1:
+                WeaponMode.melee_attack()
+            elif _select_weapon == 2:
+                WeaponMode.pistol_attack()
+            elif _select_weapon == 3:
+                WeaponMode.rifle_attack()
+            elif _select_weapon == 4:
+                pass
+            else:
+                print("No time to mess about! Make a selection!")
         elif _choice == "2":
-            pass
+            Game.chose_dodge()
         elif _choice == "3":
-            pass
+            Game.chose_cover()
         elif _choice == "4":
-            pass
+            Game.chose_reload()
         elif _choice == "5":
             Game.instructions()
         elif _choice == "6":
@@ -61,16 +81,16 @@ class Game:
     '''Function for each choice'''
     @staticmethod
     def chose_attack():
-        pass
+        WeaponMode.pistol_attack()
     @staticmethod
     def chose_dodge():
-        pass
+        print("Chose dodge!")
     @staticmethod
     def chose_cover():
-        pass
+        print("Ducking into cover!")
     @staticmethod
     def chose_reload():
-        pass
+        print("You can soon select which weapon to reload!")
 
     '''Making an attack roll: the simple idea is
     "accuracy + accuracy bonuses vs dodge + dodge bonuses" against a random 100 roll'''
@@ -78,6 +98,23 @@ class Game:
     def player_attack(self, enemy, accuracy_total=0, dodge_total=0):
         hit_chance = (player1.accuracy + accuracy_total) - (enemy.dodge + dodge_total)
         print(f"The chance to hit is {hit_chance}!")
+
+'''Attack modes for each weapon'''
+class WeaponMode:
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def pistol_attack():
+        print('You chose a pistol!')
+
+    @staticmethod
+    def rifle_attack():
+        print('You chose a rifle!')
+
+    @staticmethod
+    def melee_attack():
+        print('You chose a knife!')
 
 '''Initialize each player with stats. In v0.1 there is only one player.
 p_stats holds the stats from the json file'''
