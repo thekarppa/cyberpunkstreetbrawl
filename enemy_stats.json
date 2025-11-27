@@ -1,17 +1,32 @@
 { 
     "enemy": {
-        "e_hp": 150,
-        "e_armor": 7,
-        "e_accuracy": 35,
-        "e_dodge": 20,
-        "e_melee_damage": 35,
-        "e_melee_accuracy_bonus": 25,
-        "e_melee_dodge_penalty": 25,
-        "e_pistol_damage": 13,
-        "e_pistol_accuracy_bonus": 10,
-        "e_pistol_ammo": 3,
-        "e_rifle_damage": 20,
-        "e_rifle_accuracy_bonus": 0,
-        "e_rifle_ammo": 6
+        "hp": 150,
+        "armor": 7,
+        "accuracy": 35,
+        "dodge": 20,
+        "melee_damage": {
+   	 "min": 10,
+  	 "max": 15,
+  	 "crit_multiplier": 3,
+  	 "crit_chance": 30
+	},
+        "melee_accuracy_bonus": 25,
+        "melee_dodge_penalty": 25,
+        "pistol_damage": {
+   		"min": 7,
+  		"max": 12,
+  		"crit_multiplier": 2,
+  		"crit_chance": 15
+	},
+        "pistol_accuracy_bonus": 10,
+        "pistol_ammo": 3,
+        "rifle_damage": {
+   	"min": 15,
+  	"max": 25,
+  	"crit_multiplier": 2,
+  	"crit_chance": 10
+	},
+        "rifle_accuracy_bonus": 0,
+        "rifle_ammo": 6
     }
 }
