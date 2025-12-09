@@ -2,7 +2,7 @@
     "player": {
         "hp": 150,
         "armor": 7,
-        "accuracy": 35,
+        "accuracy": 65,
         "dodge": 20,
         "melee_damage": {
 		"min": 10,
@@ -24,7 +24,7 @@
    	"min": 15,
   	"max": 25,
   	"crit_multiplier": 2,
-  	"crit_chance": 10
+  	"crit_chance": 5
 	},
         "rifle_accuracy_bonus": 0,
         "rifle_ammo": 6
