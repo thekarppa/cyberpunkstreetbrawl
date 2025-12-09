@@ -1,5 +1,5 @@
 # Cyberpunk Street Brawl
-A practice project for Python coding and Git management
+A practice project for Python coding and Git management. I'm using ChatGPT for some coding assistence
 
 ---
 
