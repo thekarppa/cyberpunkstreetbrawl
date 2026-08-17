@@ -11,7 +11,15 @@ A simple coding project to make a combat/brawling game
 
 ## Setup
 
-Create and activate a local Python virtual environment:
+Start the game with the project launcher:
+
+```sh
+./run.sh
+```
+
+The launcher creates `.venv` if needed, installs `requirements.txt` when it changes, and runs `main.py`.
+
+To manage the virtual environment manually:
 
 ```sh
 python3 -m venv .venv
