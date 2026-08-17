@@ -9,6 +9,27 @@ A simple coding project to make a combat/brawling game
 
 ---
 
+## Setup
+
+Create and activate a local Python virtual environment:
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Run the game from the project root:
+
+```sh
+python main.py
+```
+
+When GUI dependencies are added later, list them in `requirements.txt`.
+
+---
+
 ## Features
 
 - **Combat system** – First draft of combat system, including just 1-on-1 fights
