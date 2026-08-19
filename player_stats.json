@@ -1,0 +1,32 @@
+{ 
+    "player": {
+        "hp": 150,
+        "armor": 7,
+        "accuracy": 65,
+        "dodge": 20,
+        "melee_damage": {
+		"min": 10,
+	 	"max": 15,
+	  	"crit_multiplier": 3,
+	  	"crit_chance": 30
+	},
+        "melee_accuracy_bonus": 25,
+        "melee_dodge_penalty": 25,
+        "pistol_damage": {
+   		"min": 7,
+  		"max": 12,
+  		"crit_multiplier": 2,
+  		"crit_chance": 15
+	},
+        "pistol_accuracy_bonus": 10,
+        "pistol_ammo": 3,
+        "rifle_damage": {
+   	"min": 15,
+  	"max": 25,
+  	"crit_multiplier": 2,
+  	"crit_chance": 5
+	},
+        "rifle_accuracy_bonus": 0,
+        "rifle_ammo": 6
+    }
+}

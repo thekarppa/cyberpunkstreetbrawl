@@ -1,0 +1,44 @@
+{
+  "cybernetics": {
+    "subdermal": {
+      "name": "CombAug Subdermal Armor Model 3",
+      "extra_armor": 5,
+      "description_main": "An underskin armor system that makes you more resilient to damage.",
+      "description_more": "Consists of series of fiber meshes, armor plates and ballistics absorbers installed under the skin.",
+      "description_looks": "The system looks like a series of lines on your epidermis and some shapes under your skin.",
+      "description_effect": "Gives you some extra armor to reduce damage."
+    },
+    "targeting_eye": {
+      "name": "GuardTech Optical Combat Assist Eye 2052",
+      "extra_accuracy": 5,
+      "description_main": "A cybernetic eye that overlays targetting assistance in your field of vision.",
+      "description_more": "An artificial eye with a simple targeting computer and visual aid system.",
+      "description_looks": "A shiny, metal eye with a smooth, unearthy and pupilless surface.",
+      "description_effect": "Increases your accuracy with all weapons."
+    },
+    "pistol_assist": {
+      "name": "Gunslinger Industries Quickdraw GunHero Arm",
+      "extra_pistol_crit": 10,
+      "description_main": "An arm system that stabilizes pistol-level recoil, steadies aim and includes minor features for most pistols.",
+      "description_more": "Several minor systems that can be installed in meat or cyber arms to help uising pistols.",
+      "description_looks": "Hidden subdermally but some components can be installed as skin-mounted vents and other intimidating visuals.",
+      "description_effect": "Your pistols crit more often."
+    },
+    "mag_vest": {
+      "name": "TacWear 2032 Tactical Subdermal Vest",
+      "extra_reloads": 1,
+      "description_main": "A tried and tested vest-like setup that is installed into the chest of the user.",
+      "description_more": "A series of attachment points and underskin pockets. Comes with compatible shirt lines for easy access to the pockets.",
+      "description_looks": "Some bumps on your chest and sides with piercing-like attachment points and clips. Pretty easy to conceal with a shirt.",
+      "description_effect": "You get one free reload."
+    },
+    "a": {
+      "name": "a",
+      "extra_accuracy": 10,
+      "description_main": "a",
+      "description_more": "a",
+      "description_looks": "a",
+      "description_effect": "a"
+    }
+  }
+}
